@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JF Collections - Browse our selection of quality bags including backpacks, handbags, tote bags, and travel bags">
+    <title>JF Collections - Product Catalog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-top">
+            <div class="header-left">
+                <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </button>
+            </div>
+            <a href="index.html" class="brand-name-link">
+                <h1 class="brand-name">
+                    <img src="images/gemini-bag.png" alt="" class="brand-icon"><span>JF Collections</span>
+                </h1>
+            </a>
+            <div class="header-right">
+                <button type="button" id="search-toggle" class="icon-button" aria-label="Search">
+                    <span>🔍</span>
+                </button>
+            </div>
+        </div>
+        <!-- Search bar (hidden by default) -->
+        <div class="search-bar" id="search-bar" style="display: none;">
+            <input type="search" id="search-input" class="search-input-full" placeholder="Search products..." aria-label="Search products">
+            <button type="button" id="search-button" class="search-bar-btn" aria-label="Search">Search</button>
+            <button type="button" id="search-close" class="search-bar-close" aria-label="Close search">&times;</button>
+        </div>
+        <!-- Slide-out navigation menu -->
+        <nav class="slide-menu" id="slide-menu" aria-label="Main navigation">
+            <div class="slide-menu-header">
+                <button type="button" id="menu-close" class="menu-close" aria-label="Close menu">&times;</button>
+            </div>
+            <ul class="slide-menu-list">
+                <li><a href="index.html" class="slide-menu-link">Home</a></li>
+                <li><a href="index.html" class="slide-menu-link" id="nav-products">Products</a></li>
+                <li><a href="about.html" class="slide-menu-link">About</a></li>
+                <li><a href="contact.html" class="slide-menu-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </header>
+
+    <!-- Collection announcement bar -->
+    <div class="announcement-bar">
+        <p class="announcement-text">Spring 2026 Collection — Discover the new season's essentials</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <video class="hero-bg-video" autoplay muted playsinline poster="images/middle-pic.png">
+                <source src="images/new-bag-video.mp4" type="video/mp4">
+                <!-- Fallback to image if video not supported -->
+                <img src="images/middle-pic.png" alt="JF Collections bag showcase" class="hero-bg-image">
+            </video>
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <p class="hero-subtitle">Discover Your Perfect Bag</p>
+                <a href="#bags-catalog" class="hero-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bags Product Preview -->
+    <section class="product-preview" id="bags-preview">
+        <div class="preview-grid" id="bags-preview-grid">
+            <!-- Populated dynamically from products.json -->
+        </div>
+    </section>
+
+    <!-- Colour Cosmetics Banner -->
+    <section class="promo-banner cosmetics-banner">
+        <div class="promo-background">
+            <video class="promo-bg-video" autoplay muted playsinline poster="images/colour-cosmetics.png">
+                <source src="images/cosmetics.mp4" type="video/mp4">
+                <img src="images/colour-cosmetics.png" alt="Colour Cosmetics collection" class="promo-bg-image">
+            </video>
+        </div>
+        <div class="promo-overlay">
+            <div class="promo-content">
+                <h2 class="promo-title">Colour Cosmetics</h2>
+                <p class="promo-subtitle">Elevate Your Beauty Routine</p>
+                <a href="#bags-catalog" class="hero-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cosmetics Product Preview -->
+    <section class="product-preview" id="cosmetics-preview">
+        <h2 class="preview-title">Colour Cosmetics</h2>
+        <div class="preview-grid" id="cosmetics-preview-grid">
+            <p class="preview-coming-soon">Coming Soon</p>
+        </div>
+    </section>
+
+    <!-- Jewellery Banner -->
+    <section class="promo-banner jewellery-banner">
+        <div class="promo-background">
+            <video class="promo-bg-video" autoplay muted playsinline>
+                <source src="images/jewellary.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="promo-overlay">
+            <div class="promo-content">
+                <h2 class="promo-title">Jewellery</h2>
+                <p class="promo-subtitle">Timeless Elegance, Crafted for You</p>
+                <a href="#" class="hero-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jewellery Product Preview -->
+    <section class="product-preview" id="jewellery-preview">
+        <h2 class="preview-title">Jewellery</h2>
+        <div class="preview-grid" id="jewellery-preview-grid">
+            <p class="preview-coming-soon">Coming Soon</p>
+        </div>
+    </section>
+
+    <!-- Homepage Footer -->
+    <footer class="homepage-footer">
+        <div class="homepage-footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-name-link">
+                    <span class="footer-brand-name">JF Collections</span>
+                </a>
+                <p class="footer-tagline">Luxury Bags & Colour Cosmetics</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <main class="main-content" id="main-content" style="display: none;">
+        <div class="catalog-container" id="bags-catalog">
+            <aside class="filter-sidebar" id="filter-sidebar" role="complementary" aria-label="Product filters">
+                <h2 class="filter-title">Filters</h2>
+                
+                <div class="filter-section">
+                    <h3 class="filter-section-title">Categories</h3>
+                    <div class="filter-options" role="group" aria-label="Category filters">
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="backpack" class="filter-checkbox" aria-label="Filter by Backpacks">
+                            <span class="filter-label">Backpacks</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="handbag" class="filter-checkbox" aria-label="Filter by Handbags">
+                            <span class="filter-label">Handbags</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="tote" class="filter-checkbox" aria-label="Filter by Tote Bags">
+                            <span class="filter-label">Tote Bags</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="travel" class="filter-checkbox" aria-label="Filter by Travel Bags">
+                            <span class="filter-label">Travel Bags</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3 class="filter-section-title">Price Range</h3>
+                    <div class="filter-options" role="group" aria-label="Price range filters">
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="under-50" class="filter-checkbox" aria-label="Filter by Under $50">
+                            <span class="filter-label">Under $50</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="50-100" class="filter-checkbox" aria-label="Filter by $50 to $100">
+                            <span class="filter-label">$50 - $100</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="100-200" class="filter-checkbox" aria-label="Filter by $100 to $200">
+                            <span class="filter-label">$100 - $200</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="over-200" class="filter-checkbox" aria-label="Filter by Over $200">
+                            <span class="filter-label">Over $200</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="clear-filters" class="clear-filters-button" aria-label="Clear all filters">Clear All Filters</button>
+            </aside>
+
+            <section class="product-catalog-section">
+                <div class="catalog-header">
+                    <h2 class="catalog-title">Our Products</h2>
+                    <p class="product-count" id="product-count" aria-live="polite" aria-atomic="true">Loading products...</p>
+                </div>
+                <div class="product-grid" id="product-grid" role="list">
+                    <!-- Product cards will be dynamically inserted here -->
+                </div>
+                <div class="no-results" id="no-results" style="display: none;" role="status" aria-live="polite">
+                    <p>No products found. Try adjusting your filters or search terms.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="site-footer" style="display: none;">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 JF Collections. All rights reserved.</p>
+            <nav class="footer-navigation">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="about.html" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="contact.html" class="footer-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/productCard.js"></script>
+    <script src="js/productCatalog.js"></script>
+    <script src="js/filterComponent.js"></script>
+    <script src="js/searchComponent.js"></script>
+    <script src="js/catalog.js"></script>
+    <script>
+        // Menu toggle
+        var slideMenu = document.getElementById('slide-menu');
+        var menuOverlay = document.getElementById('menu-overlay');
+
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            slideMenu.classList.add('open');
+            menuOverlay.classList.add('open');
+        });
+
+        function closeMenu() {
+            slideMenu.classList.remove('open');
+            menuOverlay.classList.remove('open');
+        }
+
+        document.getElementById('menu-close').addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Search toggle
+        document.getElementById('search-toggle').addEventListener('click', function() {
+            var bar = document.getElementById('search-bar');
+            bar.style.display = bar.style.display === 'none' ? 'flex' : 'none';
+            if (bar.style.display === 'flex') {
+                document.getElementById('search-input').focus();
+            }
+        });
+
+        document.getElementById('search-close').addEventListener('click', function() {
+            document.getElementById('search-bar').style.display = 'none';
+        });
+
+        // Show catalog
+        function showCatalog() {
+            document.querySelector('.hero-section').style.display = 'none';
+            document.querySelector('.cosmetics-banner').style.display = 'none';
+            document.querySelector('.jewellery-banner').style.display = 'none';
+            document.querySelector('.homepage-footer').style.display = 'none';
+            document.getElementById('bags-preview').style.display = 'none';
+            document.getElementById('cosmetics-preview').style.display = 'none';
+            document.getElementById('jewellery-preview').style.display = 'none';
+            document.querySelector('.announcement-bar').style.display = 'none';
+            document.getElementById('main-content').style.display = '';
+            document.getElementById('site-footer').style.display = '';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Bags Shop Now
+        document.querySelector('.hero-section .hero-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            showCatalog();
+        });
+
+        // Products nav link in slide menu
+        document.getElementById('nav-products').addEventListener('click', function(e) {
+            e.preventDefault();
+            closeMenu();
+            showCatalog();
+        });
+
+        // Cosmetics Shop Now — placeholder
+        document.querySelector('.cosmetics-banner .hero-button').addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+
+        // Jewellery Shop Now — placeholder
+        document.querySelector('.jewellery-banner .hero-button').addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+
+        // When videos end, reset to first frame and pause
+        document.querySelectorAll('video').forEach(function(video) {
+            video.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.pause();
+            });
+        });
+
+        // Load preview products dynamically from products.json
+        fetch('data/products.json')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                var symbol = (data.currency && data.currency.symbol) || '₹';
+                var products = data.products || [];
+                var grid = document.getElementById('bags-preview-grid');
+                // Show first 4 products
+                var previewProducts = products.slice(0, 4);
+                grid.innerHTML = '';
+                previewProducts.forEach(function(p) {
+                    var imgSrc = p.primaryImage ? 'images/products/' + p.id + '/' + p.primaryImage : 'images/placeholder.jpg';
+                    var card = document.createElement('a');
+                    card.href = 'product/index.html?id=' + p.id;
+                    card.className = 'preview-card';
+                    card.innerHTML =
+                        '<img src="' + imgSrc + '" alt="' + p.name + '" class="preview-card-image">' +
+                        '<div class="preview-card-info">' +
+                            '<p class="preview-card-name">' + p.name + '</p>' +
+                            '<p class="preview-card-desc">' + p.briefDescription + '</p>' +
+                            '<p class="preview-card-price">' + symbol + p.price.toFixed(2) + '</p>' +
+                        '</div>';
+                    grid.appendChild(card);
+                });
+            })
+            .catch(function(err) { console.error('Error loading preview products:', err); });
+
+    </script>
+</body>
+</html>

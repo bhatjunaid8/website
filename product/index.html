@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - JF Collections</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-top">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            <a href="../index.html" class="brand-name-link">
+                <h1 class="brand-name">
+                    <img src="../images/gemini-bag.png" alt="" class="brand-icon"><span>JF Collections</span>
+                </h1>
+            </a>
+            <div class="header-actions">
+                <div class="search-container">
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search..."
+                        aria-label="Search products">
+                    <button type="button" id="search-button" class="search-button" aria-label="Search">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="main-navigation" id="main-navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Products</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-detail-page" id="main-content">
+        <div class="container">
+            <a href="../index.html" class="back-link" aria-label="Back to product catalog">&larr; Back to Products</a>
+            
+            <div class="product-detail-container">
+                <div class="product-gallery" role="region" aria-label="Product image gallery">
+                    <div class="main-image-container">
+                        <img id="main-image" src="" alt="" class="main-image" aria-describedby="gallery-instructions">
+                        <p id="gallery-instructions" class="sr-only">Use arrow keys to navigate between images</p>
+                    </div>
+                    <div class="thumbnail-container" id="thumbnail-container" role="group" aria-label="Product image thumbnails">
+                        <!-- Thumbnails will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h2 id="product-name" class="product-name"></h2>
+                    <p id="product-price" class="product-price"></p>
+                    <p id="product-description" class="product-description"></p>
+                    
+                    <div class="product-details">
+                        <div class="detail-section">
+                            <h3>Dimensions</h3>
+                            <p id="product-dimensions"></p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Materials</h3>
+                            <ul id="product-materials" class="materials-list"></ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Available Colors</h3>
+                            <div id="product-colors" class="colors-container"></div>
+                        </div>
+                        
+                        <div class="detail-section" id="care-section" style="display: none;">
+                            <h3>Care Instructions</h3>
+                            <p id="product-care"></p>
+                        </div>
+                    </div>
+                    
+                    <button id="contact-button" class="contact-button" aria-label="Contact us about this product">
+                        Contact Us About This Product
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 JF Collections. All rights reserved.</p>
+            <nav class="footer-navigation">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="../index.html" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="../about.html" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="../contact.html" class="footer-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/productPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+{
+  "currency": {
+    "code": "INR",
+    "symbol": "₹"
+  },
+  "products": [
+    {
+      "id": "1",
+      "name": "Classic Leather Backpack",
+      "briefDescription": "Durable leather backpack perfect for daily commute",
+      "fullDescription": "This classic leather backpack combines style and functionality. Made from premium full-grain leather, it features multiple compartments for organization and padded straps for comfort.",
+      "price": 89.99,
+      "dimensions": {
+        "inches": "16 x 12 x 6",
+        "centimeters": "40 x 30 x 15"
+      },
+      "materials": [
+        "Leather",
+        "Cotton"
+      ],
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Wipe clean with damp cloth",
+      "category": "backpack",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Elegant Evening Handbag",
+      "briefDescription": "Sophisticated handbag for special occasions",
+      "fullDescription": "An elegant evening handbag crafted from premium materials. Features a sleek design with gold-tone hardware and a detachable chain strap.",
+      "price": 129.99,
+      "dimensions": {
+        "inches": "10 x 6 x 3",
+        "centimeters": "25 x 15 x 8"
+      },
+      "materials": [
+        "Leather",
+        "Metal"
+      ],
+      "colors": [
+        "Black",
+        "Gold",
+        "Silver"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Store in dust bag when not in use",
+      "category": "handbag",
+      "createdAt": "2024-01-02T00:00:00.000Z",
+      "updatedAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Canvas Tote Bag",
+      "briefDescription": "Spacious and eco-friendly tote for everyday use",
+      "fullDescription": "A versatile canvas tote bag perfect for shopping, beach trips, or daily errands. Made from sustainable materials with reinforced handles.",
+      "price": 34.99,
+      "dimensions": {
+        "inches": "18 x 14 x 4",
+        "centimeters": "45 x 35 x 10"
+      },
+      "materials": [
+        "Canvas",
+        "Cotton"
+      ],
+      "colors": [
+        "Natural",
+        "Navy",
+        "Red"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Machine washable",
+      "category": "tote",
+      "createdAt": "2024-01-03T00:00:00.000Z",
+      "updatedAt": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "Rolling Travel Bag",
+      "briefDescription": "Large capacity travel bag with wheels",
+      "fullDescription": "A spacious rolling travel bag designed for extended trips. Features durable wheels, telescoping handle, and multiple compartments for organized packing.",
+      "price": 159.99,
+      "dimensions": {
+        "inches": "24 x 16 x 10",
+        "centimeters": "60 x 40 x 25"
+      },
+      "materials": [
+        "Polyester",
+        "Plastic",
+        "Metal"
+      ],
+      "colors": [
+        "Black",
+        "Navy",
+        "Gray"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Wipe clean with damp cloth",
+      "category": "travel",
+      "createdAt": "2024-01-04T00:00:00.000Z",
+      "updatedAt": "2024-01-04T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Minimalist Crossbody Bag",
+      "briefDescription": "Compact crossbody bag for essentials",
+      "fullDescription": "A sleek minimalist crossbody bag perfect for carrying your essentials. Features an adjustable strap and secure zipper closure.",
+      "price": 49.99,
+      "dimensions": {
+        "inches": "8 x 6 x 2",
+        "centimeters": "20 x 15 x 5"
+      },
+      "materials": [
+        "Leather",
+        "Cotton"
+      ],
+      "colors": [
+        "Black",
+        "Tan",
+        "Burgundy"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Wipe clean with damp cloth",
+      "category": "handbag",
+      "createdAt": "2024-01-05T00:00:00.000Z",
+      "updatedAt": "2024-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Laptop Backpack Pro",
+      "briefDescription": "Professional backpack with laptop compartment",
+      "fullDescription": "A professional-grade backpack designed for tech-savvy commuters. Features a padded laptop compartment, USB charging port, and water-resistant material.",
+      "price": 119.99,
+      "dimensions": {
+        "inches": "18 x 13 x 7",
+        "centimeters": "45 x 33 x 18"
+      },
+      "materials": [
+        "Nylon",
+        "Polyester"
+      ],
+      "colors": [
+        "Black",
+        "Gray",
+        "Navy"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Spot clean only",
+      "category": "backpack",
+      "createdAt": "2024-01-06T00:00:00.000Z",
+      "updatedAt": "2024-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "1773428606696",
+      "name": "june",
+      "category": "handbag",
+      "price": 12,
+      "briefDescription": "Bra",
+      "fullDescription": "Bra",
+      "dimensions": {
+        "inches": "32*32*32",
+        "centimeters": "32*32*32"
+      },
+      "materials": [
+        "cotton"
+      ],
+      "colors": [
+        "pink"
+      ],
+      "careInstructions": "wfwfwf",
+      "primaryImage": "main.png",
+      "images": [
+        "main.png",
+        "image1.png",
+        "image2.png"
+      ],
+      "createdAt": "2026-03-13T19:03:26.700Z",
+      "updatedAt": "2026-03-13T19:03:26.707Z"
+    }
+  ],
+  "categories": {
+    "backpack": 2,
+    "handbag": 3,
+    "tote": 1,
+    "travel": 1
+  },
+  "lastUpdated": "2026-03-13T19:03:26.708Z"
+}
