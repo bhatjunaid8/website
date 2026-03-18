@@ -679,6 +679,11 @@ select:focus-visible {
     color: #fff;
 }
 
+/* Filter toggle button - hidden on desktop */
+.filter-toggle-btn {
+    display: none;
+}
+
 /* Product Catalog Section */
 .product-catalog-section {
     background-color: #fff;
@@ -938,6 +943,31 @@ select:focus-visible {
 
     .filter-sidebar {
         position: static;
+        display: none;
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .filter-sidebar.open {
+        display: block;
+    }
+
+    .filter-toggle-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-bottom: 1rem;
     }
 
     .brand-name {

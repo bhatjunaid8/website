@@ -154,6 +154,7 @@
 
     <main class="main-content" id="main-content" style="display: none;">
         <div class="catalog-container" id="bags-catalog">
+            <button type="button" class="filter-toggle-btn" id="filter-toggle">☰ Filters</button>
             <aside class="filter-sidebar" id="filter-sidebar" role="complementary" aria-label="Product filters">
                 <h2 class="filter-title">Filters</h2>
                 
@@ -314,6 +315,16 @@
                 this.pause();
             });
         });
+
+        // Filter toggle for mobile
+        var filterToggle = document.getElementById('filter-toggle');
+        var filterSidebar = document.getElementById('filter-sidebar');
+        if (filterToggle) {
+            filterToggle.addEventListener('click', function() {
+                filterSidebar.classList.toggle('open');
+                this.textContent = filterSidebar.classList.contains('open') ? '✕ Close Filters' : '☰ Filters';
+            });
+        }
 
         // Load preview products dynamically from products.json
         fetch('data/products.json')
