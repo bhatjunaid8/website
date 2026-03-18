@@ -941,13 +941,15 @@ select:focus-visible {
     }
 
     .brand-name {
-        font-size: 1.25rem;
-        letter-spacing: 2px;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        gap: 0.4rem;
     }
 
     .brand-icon {
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
     }
 
     .header-top {
