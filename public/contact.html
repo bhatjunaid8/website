@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact JF Collections - Get in touch with us for product inquiries and questions">
+    <title>Contact Us - JF Collections</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-top">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            <a href="index.html" class="brand-name-link">
+                <h1 class="brand-name">
+                    <img src="images/gemini-bag.png" alt="" class="brand-icon"><span>JF Collections</span>
+                </h1>
+            </a>
+            <div class="header-actions">
+                <div class="search-container">
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search..."
+                        aria-label="Search products">
+                    <button type="button" id="search-button" class="search-button" aria-label="Search">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="main-navigation" id="main-navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="contact-container">
+            <section class="contact-info-section">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-description">Have questions about our products? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <h3 class="contact-detail-title">Email</h3>
+                        <p class="contact-detail-text">
+                            <a href="mailto:info@jfcollections.com" class="contact-link">info@jfcollections.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-detail-item">
+                        <h3 class="contact-detail-title">Phone</h3>
+                        <p class="contact-detail-text">
+                            <a href="tel:+15551234567" class="contact-link">+1 (555) 123-4567</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2 class="form-title">Send Us a Message</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="contact-name" 
+                            name="name" 
+                            class="form-input" 
+                            required
+                            aria-label="Your name"
+                            aria-required="true">
+                        <span class="error-message" id="name-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="contact-email" 
+                            name="email" 
+                            class="form-input" 
+                            required
+                            aria-label="Your email address"
+                            aria-required="true">
+                        <span class="error-message" id="email-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject" class="form-label">Subject <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="contact-subject" 
+                            name="subject" 
+                            class="form-input" 
+                            required
+                            aria-label="Message subject"
+                            aria-required="true">
+                        <span class="error-message" id="subject-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="contact-message" 
+                            name="message" 
+                            class="form-textarea" 
+                            rows="6" 
+                            required
+                            aria-label="Your message"
+                            aria-required="true"></textarea>
+                        <span class="error-message" id="message-error" role="alert"></span>
+                    </div>
+
+                    <button type="submit" class="submit-button" aria-label="Submit contact form">Send Message</button>
+                    
+                    <div class="form-success" id="form-success" style="display: none;" role="status" aria-live="polite">
+                        <p>Thank you for your message! We'll get back to you soon.</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 JF Collections. All rights reserved.</p>
+            <nav class="footer-navigation">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="about.html" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="contact.html" class="footer-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/contactForm.js"></script>
+</body>
+</html>
