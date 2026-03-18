@@ -957,6 +957,24 @@ select:focus-visible {
     }
 }
 
+/* Extra small screens (<400px) */
+@media (max-width: 400px) {
+    .brand-name {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        gap: 0.3rem;
+    }
+
+    .brand-icon {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .header-top {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
 /* Accessibility - Focus Styles */
 *:focus {
     outline: 2px solid #3498db;
