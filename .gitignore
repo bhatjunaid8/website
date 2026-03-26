@@ -24,10 +24,6 @@ Thumbs.db
 *.tmp
 *.temp
 
-# Uploaded images (except sample data)
-public/images/products/*
-!public/images/products/.gitkeep
-
 # Unused large files
 public/images/video.mp4
 public/images/Screenshot*
