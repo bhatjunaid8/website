@@ -240,13 +240,39 @@
       "category": "handbag",
       "createdAt": "2026-03-26T20:00:00.000Z",
       "updatedAt": "2026-03-26T20:00:00.000Z"
+    },
+    {
+      "id": "1774558827789",
+      "name": "Leather bag",
+      "category": "handbag",
+      "price": 1200,
+      "briefDescription": "Leather bag",
+      "fullDescription": "Wity full",
+      "dimensions": {
+        "inches": "15x3x13",
+        "centimeters": "38"
+      },
+      "materials": [
+        "Letter"
+      ],
+      "colors": [
+        "Black"
+      ],
+      "primaryImage": "main.jpeg",
+      "images": [
+        "main.jpeg",
+        "image1.jpeg",
+        "image2.jpeg"
+      ],
+      "createdAt": "2026-03-26T21:00:29.898Z",
+      "updatedAt": "2026-03-26T21:00:29.898Z"
     }
   ],
   "categories": {
     "backpack": 2,
-    "handbag": 4,
+    "handbag": 5,
     "tote": 1,
     "travel": 1
   },
-  "lastUpdated": "2026-03-13T19:03:26.708Z"
+  "lastUpdated": "2026-03-26T21:00:29.898Z"
 }
