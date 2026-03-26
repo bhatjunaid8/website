@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - JF Collections</title>
+    <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>JF Collections - Admin Panel</h1>
+            <a href="../public/index.html" class="view-site-link" target="_blank">View Site</a>
+        </header>
+
+        <main class="admin-main">
+            <!-- Login Section -->
+            <section id="login-section" class="login-section">
+                <div class="login-card">
+                    <h2>Admin Login</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Login</button>
+                        <div id="login-error" class="error-message"></div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Admin Content (hidden until logged in) -->
+            <section id="admin-content" class="admin-content" style="display: none;">
+                <div class="admin-grid">
+                    <!-- Add Product Form -->
+                    <div class="admin-card">
+                        <h2>Add New Product</h2>
+                        <form id="add-product-form" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="product-name">Product Name *</label>
+                                <input type="text" id="product-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-category">Category *</label>
+                                <select id="product-category" required>
+                                    <option value="">Select category</option>
+                                    <option value="backpack">Backpack</option>
+                                    <option value="handbag">Handbag</option>
+                                    <option value="tote">Tote Bag</option>
+                                    <option value="travel">Travel Bag</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-price">Price ($) *</label>
+                                <input type="number" id="product-price" step="0.01" min="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-brief-desc">Brief Description *</label>
+                                <textarea id="product-brief-desc" rows="2" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-full-desc">Full Description *</label>
+                                <textarea id="product-full-desc" rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-dimensions-inches">Dimensions (inches) *</label>
+                                <input type="text" id="product-dimensions-inches" placeholder="e.g., 15 x 10 x 5" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-dimensions-cm">Dimensions (cm) *</label>
+                                <input type="text" id="product-dimensions-cm" placeholder="e.g., 38 x 25 x 13" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-materials">Materials (comma-separated) *</label>
+                                <input type="text" id="product-materials" placeholder="e.g., Leather, Cotton, Metal" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-colors">Colors (comma-separated) *</label>
+                                <input type="text" id="product-colors" placeholder="e.g., Black, Brown, Tan" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-care">Care Instructions (optional)</label>
+                                <textarea id="product-care" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-images">Product Images * (Select 1-5 images)</label>
+                                <input type="file" id="product-images" accept="image/*" multiple required>
+                                <small>First image will be the primary image</small>
+                            </div>
+
+                            <div id="image-preview" class="image-preview"></div>
+
+                            <button type="submit" class="btn-primary">Add Product</button>
+                            <div id="form-message" class="form-message"></div>
+                        </form>
+                    </div>
+
+                    <!-- Product List -->
+                    <div class="admin-card">
+                        <h2>Current Products</h2>
+                        <div id="product-list" class="product-list">
+                            <p>Loading products...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/admin/js/admin.js"></script>
+</body>
+</html>
