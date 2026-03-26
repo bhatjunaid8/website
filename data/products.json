@@ -210,11 +210,41 @@
       ],
       "createdAt": "2026-03-13T19:03:26.700Z",
       "updatedAt": "2026-03-13T19:03:26.707Z"
+    },
+    {
+      "id": "7",
+      "name": "Signature Leather Shoulder Bag",
+      "briefDescription": "Premium handcrafted shoulder bag with gold-tone accents",
+      "fullDescription": "A luxurious shoulder bag crafted from the finest Italian leather. Features elegant gold-tone hardware, a spacious interior with silk lining, and an adjustable strap for versatile styling.",
+      "price": 1500,
+      "dimensions": {
+        "inches": "12 x 9 x 4",
+        "centimeters": "30 x 23 x 10"
+      },
+      "materials": [
+        "Italian Leather",
+        "Gold-tone Metal"
+      ],
+      "colors": [
+        "Black",
+        "Camel",
+        "Burgundy"
+      ],
+      "images": [
+        "main.jpg",
+        "side.jpg",
+        "detail.jpg"
+      ],
+      "primaryImage": "main.jpg",
+      "careInstructions": "Store in dust bag, avoid direct sunlight",
+      "category": "handbag",
+      "createdAt": "2026-03-26T20:00:00.000Z",
+      "updatedAt": "2026-03-26T20:00:00.000Z"
     }
   ],
   "categories": {
     "backpack": 2,
-    "handbag": 3,
+    "handbag": 4,
     "tote": 1,
     "travel": 1
   },
