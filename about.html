@@ -10,36 +10,35 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-            <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="hamburger-icon"></span>
-            </button>
+            <div class="header-left">
+                <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-text">Menu</span>
+                </button>
+            </div>
             <a href="index.html" class="brand-name-link">
                 <h1 class="brand-name">
                     <img src="images/gemini-bag.png" alt="" class="brand-icon"><span>JF Collections</span>
                 </h1>
             </a>
-            <div class="header-actions">
-                <div class="search-container">
-                    <input 
-                        type="search" 
-                        id="search-input" 
-                        class="search-input" 
-                        placeholder="Search..."
-                        aria-label="Search products">
-                    <button type="button" id="search-button" class="search-button" aria-label="Search">
-                        <span class="search-icon">🔍</span>
-                    </button>
-                </div>
+            <div class="header-right">
+                <button type="button" id="search-toggle" class="icon-button" aria-label="Search">
+                    <span>🔍</span>
+                </button>
             </div>
         </div>
-        <nav class="main-navigation" id="main-navigation">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <nav class="slide-menu" id="slide-menu" aria-label="Main navigation">
+            <div class="slide-menu-header">
+                <button type="button" id="menu-close" class="menu-close" aria-label="Close menu">&times;</button>
+            </div>
+            <ul class="slide-menu-list">
+                <li><a href="index.html" class="slide-menu-link">Home</a></li>
+                <li><a href="index.html" class="slide-menu-link">Products</a></li>
+                <li><a href="about.html" class="slide-menu-link">About</a></li>
+                <li><a href="contact.html" class="slide-menu-link">Contact</a></li>
             </ul>
         </nav>
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <main class="main-content">
@@ -93,5 +92,19 @@
     </footer>
 
     <script src="js/navigation.js"></script>
+    <script>
+        var slideMenu = document.getElementById('slide-menu');
+        var menuOverlay = document.getElementById('menu-overlay');
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            slideMenu.classList.add('open');
+            menuOverlay.classList.add('open');
+        });
+        function closeMenu() {
+            slideMenu.classList.remove('open');
+            menuOverlay.classList.remove('open');
+        }
+        document.getElementById('menu-close').addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+    </script>
 </body>
 </html>
