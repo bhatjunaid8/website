@@ -1,38 +1,9 @@
 {
   "currency": {
     "code": "INR",
-    "symbol": "₹"
+    "symbol": "\u20b9"
   },
   "products": [
-    {
-      "id": "1",
-      "name": "Classic Leather Backpack",
-      "briefDescription": "Durable leather backpack perfect for daily commute",
-      "fullDescription": "This classic leather backpack combines style and functionality. Made from premium full-grain leather, it features multiple compartments for organization and padded straps for comfort.",
-      "price": 89.99,
-      "dimensions": {
-        "inches": "16 x 12 x 6",
-        "centimeters": "40 x 30 x 15"
-      },
-      "materials": [
-        "Leather",
-        "Cotton"
-      ],
-      "colors": [
-        "Black",
-        "Brown"
-      ],
-      "images": [
-        "main.jpg",
-        "side.jpg",
-        "detail.jpg"
-      ],
-      "primaryImage": "main.jpg",
-      "careInstructions": "Wipe clean with damp cloth",
-      "category": "backpack",
-      "createdAt": "2024-01-01T00:00:00.000Z",
-      "updatedAt": "2024-01-01T00:00:00.000Z"
-    },
     {
       "id": "2",
       "name": "Elegant Evening Handbag",
@@ -92,37 +63,6 @@
       "category": "tote",
       "createdAt": "2024-01-03T00:00:00.000Z",
       "updatedAt": "2024-01-03T00:00:00.000Z"
-    },
-    {
-      "id": "4",
-      "name": "Rolling Travel Bag",
-      "briefDescription": "Large capacity travel bag with wheels",
-      "fullDescription": "A spacious rolling travel bag designed for extended trips. Features durable wheels, telescoping handle, and multiple compartments for organized packing.",
-      "price": 159.99,
-      "dimensions": {
-        "inches": "24 x 16 x 10",
-        "centimeters": "60 x 40 x 25"
-      },
-      "materials": [
-        "Polyester",
-        "Plastic",
-        "Metal"
-      ],
-      "colors": [
-        "Black",
-        "Navy",
-        "Gray"
-      ],
-      "images": [
-        "main.jpg",
-        "side.jpg",
-        "detail.jpg"
-      ],
-      "primaryImage": "main.jpg",
-      "careInstructions": "Wipe clean with damp cloth",
-      "category": "travel",
-      "createdAt": "2024-01-04T00:00:00.000Z",
-      "updatedAt": "2024-01-04T00:00:00.000Z"
     },
     {
       "id": "5",
@@ -243,10 +183,10 @@
     }
   ],
   "categories": {
-    "backpack": 2,
+    "backpack": 1,
     "handbag": 4,
     "tote": 1,
-    "travel": 1
+    "travel": 0
   },
   "lastUpdated": "2026-03-13T19:03:26.708Z"
 }
